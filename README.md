@@ -1,22 +1,22 @@
-## Overview:
+## Overview
 
   This Django Blog Application provides a simple blogging platform with full CRUD functionalities for posts and the ability to comment on them. It uses Django and 
   Django REST Framework with token-based authentication.
 
-## Features:
+## Features
 
   User registration, login, and logout.
   CRUD operations on blog posts.
   Ability to comment on posts.
   Token-based user authentication.
   
-## Technology Stack:
+## Technology Stack
 
   Django
   Django REST Framework
   SQLite (default Django database)
   
-## Getting Started:
+## Getting Started
 
   These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -24,7 +24,7 @@
 
   You need to have Python installed on your machine. This application was built using Python 3.9. You also need pip to install the necessary packages.
 
-## Installation:
+## Installation
 ```
   Clone the repository
   git clone https://github.com/yourusername/django-blog-app.git
@@ -41,7 +41,7 @@
   Run the server
   python manage.py runserver
   ```
-## API Endpoints:
+## API Endpoints
 ```
   User Registration: POST /register/
   User Login: POST /login/ - Returns a token upon successful login.
@@ -50,7 +50,7 @@
   Retrieve/Update/Delete Post: GET, PUT, PATCH, DELETE /posts/<int:pk>/
   List/Create Comments on Post: GET, POST /posts/<int:post_id>/comments/
 ```
-## Endpoints Examples:
+## Endpoints Examples
 ## 1. User Registration: POST /register/
   Request Example:
 
