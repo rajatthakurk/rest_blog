@@ -25,7 +25,7 @@ Prerequisites:
   You need to have Python installed on your machine. This application was built using Python 3.9. You also need pip to install the necessary packages.
 
 Installation:
-
+```
   Clone the repository
   git clone https://github.com/yourusername/django-blog-app.git
   cd django-blog-app
@@ -40,16 +40,16 @@ Installation:
   python manage.py createsuperuser
   Run the server
   python manage.py runserver
-  
+  ```
 API Endpoints:
-
+```
   User Registration: POST /register/
   User Login: POST /login/ - Returns a token upon successful login.
   User Logout: POST /logout/
   List/Create Posts: GET, POST /posts/
   Retrieve/Update/Delete Post: GET, PUT, PATCH, DELETE /posts/<int:pk>/
   List/Create Comments on Post: GET, POST /posts/<int:post_id>/comments/
-
+```
 Endpoints Examples:
 1. User Registration: POST /register/
   Request Example:
@@ -61,40 +61,43 @@ Endpoints Examples:
   }
 ```
   Response Example:
-
+```
   {
     "token": "ab12cd34ef56gh78ij90kl"
     }
-
+```
 3. User Login: POST /login/
   Request Example:
-
+```
   {
     "username": "newuser",
     "password": "securepassword"
   }
+```
   Response Example:
-
+```
   {
     "token": "ab12cd34ef56gh78ij90kl"
   }
 ```
 4. User Logout: POST /logout/
   Request Example:
-
+```
   {
     "token": "ab12cd34ef56gh78ij90kl"
   }
+```
   Response Example:
-
+```
   {
     "detail": "Successfully logged out."
   }
+```
 
 5. List/Create Posts: GET, POST /posts/
   GET Request Example: (No body required for GET requests)
   GET Response Example:
-
+```
   {
     "id": 2,
     "title": "New Post",
@@ -102,16 +105,17 @@ Endpoints Examples:
     "author": "newuser",
     "published_date": "2024-05-03T15:20:00Z"
   }
-
+```
   POST Request Example:
-  
+  ```
   {
     "title": "New Post",
     "content": "Content of the new post.",
     "author": 1
   }
+```
   POST Response Example:
-  
+  ```
   {
     "id": 2,
     "title": "New Post",
@@ -119,10 +123,11 @@ Endpoints Examples:
     "author": "newuser",
     "published_date": "2024-05-03T15:20:00Z"
   }
+```
 5. Retrieve/Update/Delete Post: GET, PUT, PATCH, DELETE /posts/<int:pk>/
   GET Request Example: (No body required)
   GET Response Example:
-  
+  ```
   {
     "id": 1,
     "title": "Sample Post",
@@ -130,15 +135,16 @@ Endpoints Examples:
     "author": "newuser",
     "published_date": "2024-05-03T14:48:00Z"
   }
+```
   PUT/PATCH Request Example:
-  
-  
+  ```
   {
     "title": "Updated Title",
     "content": "Updated content of the post."
   }
+```
   PUT/PATCH Response Example:
-  
+  ```
   {
     "id": 1,
     "title": "Updated Title",
@@ -146,17 +152,19 @@ Endpoints Examples:
     "author": "newuser",
     "published_date": "2024-05-03T14:48:00Z"
   }
+```
   
   DELETE Request Example: (No body required)
   DELETE Response Example:
+  ```
   {
     "detail": "Post deleted successfully."
   }
-  
+  ```
 6. List/Create Comments on Post: GET, POST /posts/<int:post_id>/comments/
   GET Request Example: (No body required)
   GET Response Example:
-  
+  ```
     {
       "id": 1,
       "post": 1,
@@ -164,15 +172,17 @@ Endpoints Examples:
       "text": "A comment on the post.",
       "created_date": "2024-05-03T16:00:00Z"
     }
+```
 
   POST Request Example:
-  
+  ```
   {
     "text": "Another comment on the post.",
     "author": 1
   }
+```
   POST Response Example:
-  
+  ```
   {
     "id": 2,
     "post": 1,
@@ -180,3 +190,4 @@ Endpoints Examples:
     "text": "Another comment on the post.",
     "created_date": "2024-05-03T16:05:00Z"
   }
+```
