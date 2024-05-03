@@ -74,7 +74,7 @@
 ```
   {
     "token": "ab12cd34ef56gh78ij90kl"
-    }
+  }
 ```
 ## 2. User Login: POST /login/
   Request Example:
