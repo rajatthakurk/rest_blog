@@ -15,6 +15,8 @@
   
 ## Technology Stack
 
+  * Python
+
   * Django
   
   * Django REST Framework
