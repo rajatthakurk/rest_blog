@@ -53,17 +53,19 @@ API Endpoints:
 Endpoints Examples:
 1. User Registration: POST /register/
   Request Example:
-'''
+```
   {
     "username": "newuser",
     "email": "user@example.com",
     "password": "securepassword"
   }
+```
   Response Example:
 
   {
     "token": "ab12cd34ef56gh78ij90kl"
-```
+    }
+
 3. User Login: POST /login/
   Request Example:
 
