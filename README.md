@@ -6,14 +6,19 @@
 ## Features
 
   User registration, login, and logout.
+  
   CRUD operations on blog posts.
+  
   Ability to comment on posts.
+  
   Token-based user authentication.
   
 ## Technology Stack
 
   Django
+  
   Django REST Framework
+  
   SQLite (default Django database)
   
 ## Getting Started
