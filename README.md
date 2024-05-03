@@ -50,7 +50,7 @@
   Retrieve/Update/Delete Post: GET, PUT, PATCH, DELETE /posts/<int:pk>/
   List/Create Comments on Post: GET, POST /posts/<int:post_id>/comments/
 ```
-Endpoints Examples:
+## Endpoints Examples:
 ## 1. User Registration: POST /register/
   Request Example:
 
