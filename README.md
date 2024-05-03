@@ -1,30 +1,30 @@
-Overview:
+## Overview:
 
   This Django Blog Application provides a simple blogging platform with full CRUD functionalities for posts and the ability to comment on them. It uses Django and 
   Django REST Framework with token-based authentication.
 
-Features:
+## Features:
 
   User registration, login, and logout.
   CRUD operations on blog posts.
   Ability to comment on posts.
   Token-based user authentication.
   
-Technology Stack:
+## Technology Stack:
 
   Django
   Django REST Framework
   SQLite (default Django database)
   
-Getting Started:
+## Getting Started:
 
   These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites:
+##Prerequisites:
 
   You need to have Python installed on your machine. This application was built using Python 3.9. You also need pip to install the necessary packages.
 
-Installation:
+## Installation:
 ```
   Clone the repository
   git clone https://github.com/yourusername/django-blog-app.git
@@ -41,7 +41,7 @@ Installation:
   Run the server
   python manage.py runserver
   ```
-API Endpoints:
+## API Endpoints:
 ```
   User Registration: POST /register/
   User Login: POST /login/ - Returns a token upon successful login.
@@ -51,7 +51,7 @@ API Endpoints:
   List/Create Comments on Post: GET, POST /posts/<int:post_id>/comments/
 ```
 Endpoints Examples:
-1. User Registration: POST /register/
+## 1. User Registration: POST /register/
   Request Example:
 
 ```
@@ -69,7 +69,7 @@ Endpoints Examples:
     "token": "ab12cd34ef56gh78ij90kl"
     }
 ```
-3. User Login: POST /login/
+## 2. User Login: POST /login/
   Request Example:
 
 ```
@@ -85,7 +85,7 @@ Endpoints Examples:
     "token": "ab12cd34ef56gh78ij90kl"
   }
 ```
-4. User Logout: POST /logout/
+## 3. User Logout: POST /logout/
   Request Example:
 
 ```
@@ -101,7 +101,7 @@ Endpoints Examples:
   }
 ```
 
-5. List/Create Posts: GET, POST /posts/
+## 4. List/Create Posts: GET, POST /posts/
   GET Request Example: (No body required for GET requests)
   GET Response Example:
 
@@ -134,7 +134,7 @@ Endpoints Examples:
     "published_date": "2024-05-03T15:20:00Z"
   }
 ```
-5. Retrieve/Update/Delete Post: GET, PUT, PATCH, DELETE /posts/<int:pk>/
+## 5. Retrieve/Update/Delete Post: GET, PUT, PATCH, DELETE /posts/<int:pk>/
   GET Request Example: (No body required)
   GET Response Example:
 
@@ -175,7 +175,7 @@ Endpoints Examples:
     "detail": "Post deleted successfully."
   }
   ```
-6. List/Create Comments on Post: GET, POST /posts/<int:post_id>/comments/
+## 6. List/Create Comments on Post: GET, POST /posts/<int:post_id>/comments/
   GET Request Example: (No body required)
   GET Response Example:
 
