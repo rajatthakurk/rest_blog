@@ -9,17 +9,17 @@
   
   * CRUD operations on blog posts.
   
-  Ability to comment on posts.
+  * Ability to comment on posts.
   
-  Token-based user authentication.
+  * Token-based user authentication.
   
 ## Technology Stack
 
-  Django
+  * Django
   
-  Django REST Framework
+  * Django REST Framework
   
-  SQLite (default Django database)
+  * SQLite (default Django database)
   
 ## Getting Started
 
