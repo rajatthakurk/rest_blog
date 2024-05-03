@@ -22,7 +22,7 @@
 
 ## Prerequisites:
 
-  You need to have Python installed on your machine. This application was built using Python 3.9. You also need pip to install the necessary packages.
+  You need to have Python installed on your machine. This application was built using Python 3.10 You also need pip to install the necessary packages.
 
 ## Installation
 ```bash
