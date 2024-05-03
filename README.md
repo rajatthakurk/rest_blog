@@ -25,7 +25,7 @@
   You need to have Python installed on your machine. This application was built using Python 3.9. You also need pip to install the necessary packages.
 
 ## Installation
-```
+```bash
   Clone the repository
   git clone https://github.com/yourusername/django-blog-app.git
   cd django-blog-app
