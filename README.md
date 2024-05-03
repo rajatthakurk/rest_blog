@@ -5,9 +5,9 @@
 
 ## Features
 
-  User registration, login, and logout.
+  * User registration, login, and logout.
   
-  CRUD operations on blog posts.
+  * CRUD operations on blog posts.
   
   Ability to comment on posts.
   
