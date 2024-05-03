@@ -53,14 +53,17 @@ API Endpoints:
 Endpoints Examples:
 1. User Registration: POST /register/
   Request Example:
+
 ```
   {
     "username": "newuser",
     "email": "user@example.com",
     "password": "securepassword"
   }
+
 ```
   Response Example:
+  
 ```
   {
     "token": "ab12cd34ef56gh78ij90kl"
@@ -68,6 +71,7 @@ Endpoints Examples:
 ```
 3. User Login: POST /login/
   Request Example:
+
 ```
   {
     "username": "newuser",
@@ -75,6 +79,7 @@ Endpoints Examples:
   }
 ```
   Response Example:
+  
 ```
   {
     "token": "ab12cd34ef56gh78ij90kl"
@@ -82,12 +87,14 @@ Endpoints Examples:
 ```
 4. User Logout: POST /logout/
   Request Example:
+
 ```
   {
     "token": "ab12cd34ef56gh78ij90kl"
   }
 ```
   Response Example:
+  
 ```
   {
     "detail": "Successfully logged out."
@@ -97,6 +104,7 @@ Endpoints Examples:
 5. List/Create Posts: GET, POST /posts/
   GET Request Example: (No body required for GET requests)
   GET Response Example:
+
 ```
   {
     "id": 2,
@@ -107,6 +115,7 @@ Endpoints Examples:
   }
 ```
   POST Request Example:
+  
   ```
   {
     "title": "New Post",
@@ -115,6 +124,7 @@ Endpoints Examples:
   }
 ```
   POST Response Example:
+  
   ```
   {
     "id": 2,
@@ -127,6 +137,7 @@ Endpoints Examples:
 5. Retrieve/Update/Delete Post: GET, PUT, PATCH, DELETE /posts/<int:pk>/
   GET Request Example: (No body required)
   GET Response Example:
+
   ```
   {
     "id": 1,
@@ -137,6 +148,7 @@ Endpoints Examples:
   }
 ```
   PUT/PATCH Request Example:
+  
   ```
   {
     "title": "Updated Title",
@@ -144,6 +156,7 @@ Endpoints Examples:
   }
 ```
   PUT/PATCH Response Example:
+  
   ```
   {
     "id": 1,
@@ -156,6 +169,7 @@ Endpoints Examples:
   
   DELETE Request Example: (No body required)
   DELETE Response Example:
+  
   ```
   {
     "detail": "Post deleted successfully."
@@ -164,6 +178,7 @@ Endpoints Examples:
 6. List/Create Comments on Post: GET, POST /posts/<int:post_id>/comments/
   GET Request Example: (No body required)
   GET Response Example:
+
   ```
     {
       "id": 1,
@@ -175,6 +190,7 @@ Endpoints Examples:
 ```
 
   POST Request Example:
+  
   ```
   {
     "text": "Another comment on the post.",
@@ -182,6 +198,7 @@ Endpoints Examples:
   }
 ```
   POST Response Example:
+  
   ```
   {
     "id": 2,
